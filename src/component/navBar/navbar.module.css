@@ -1,0 +1,286 @@
+.nav{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    max-width: 1500px;
+    border-bottom: 1px solid hsl(0,0%,70%);
+}
+.container{
+    width: 95%;
+    display: flex;
+    max-width: 1500px;
+    align-self: stretch;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.left{
+    width: 15%;
+}
+.left h3{
+margin: 0px;
+font-size: 25px;
+
+}
+.span{
+    font-size: 25px;
+    color: navy;
+}
+.span1{
+    color: navy;
+    font-size: 25px;
+}
+.left{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+.navlink{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    height: 100%;
+    gap: 10px;
+    
+}
+.middle{
+    font-size: 18px;
+    width: 50%;
+}
+.span6{
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: navy;
+}
+
+.link2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cart{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: navy;
+    
+    padding: 2px 0px;
+}
+.currency{
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    right: 10px;
+    bottom: -55px;
+    border-radius: 8px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.currencys{
+    display: none;
+}
+.currency div{
+    width: 100%;
+}
+.currency select{
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    border: 1px solid hsl(0,0%,90%);
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+}
+.noactive{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 10px;
+    color: rgb(88, 86, 86);
+    height: 100%;
+
+}
+.btn{
+    background-color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid hsl(0,0%,90%);
+}
+.btn1{
+    background-color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn1:hover , .btn:hover{
+    background-color: hsl(0,0%,90%);
+}
+.active{
+    width: 100%;
+    color: navy;
+    height: 99%;
+    text-decoration: none;
+    padding: 0px 10px;
+font-weight: bold;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+   border-bottom: 3px solid navy;
+}
+.span3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.span2{
+    background-color: navy;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.right{
+    display: flex;
+    width: 20%;
+}
+.span0{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.span0:hover{
+  background-color: hsl(0,0%,90%);
+}
+.btn4{
+    display: flex;
+    position: absolute;
+    bottom: -80px;
+    right: 5px;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); 
+}
+.btn3{
+    display: none;
+}
+.div2{
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div1 p{
+    margin: 0px;
+}
+.div1 div button{
+    height: 30px;
+    width: 100px;
+    
+}
+.div2{
+    position: relative;
+}
+.div1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div1 span{
+    font-size: 20px;
+}
+.div1 div h3, .div1 p{
+    margin: 0px;
+}
+@media(max-width:768px){
+.container{
+  width: 90%;
+}
+.left{
+    width: 50%;
+    order: -12;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.right{
+    order: -11;
+    width: 50%;
+   
+}
+.middle{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.nav{
+    height: 150px;
+}
+.active{
+    color: navy;
+    height: 99%;
+    text-decoration: none;
+    padding: 0px 10px;
+font-weight: bold;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: navy;
+   color: white;
+   border-radius: 8px;
+}
+.div2{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    width: 80%;
+}
+.div2 p{
+    width: 50px;
+    margin-right: 5px;
+}
+}

@@ -1,0 +1,79 @@
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1500px;
+    box-shadow:5px 5px 5px 5px var(--btn1) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--count-color);
+     padding: 10px;
+     z-index: 1000;
+}
+.div{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 20;
+    margin-left: -25px;
+    background-color: var(--count-color);
+
+}
+.div1{
+    color: var(--h1color);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div2{
+    width: 40%;
+height: 30px;
+border: 2px solid hsl(0,0%,80%);
+display: flex;
+border-radius: 4px;
+background-color: white;
+}
+.input{
+    width: 90%;
+height: 25px;
+outline: none;
+vertical-align: top;
+padding-left: 10px;
+border: none;
+
+
+}
+.btn{
+    width: 10%;
+    height: 30px;
+   text-align: center;
+    border: none;
+    border-left: 1px solid rgb(231, 229, 229);
+}
+.small{
+    border: none;
+    cursor: pointer;
+    background-color: var(--count-color);
+}
+.Sun{
+    font-size: 25px;
+    color: yellow;
+    
+}
+.Moon{
+    font-size: 25px;
+    color: white;
+    color: yellow;
+}
+@media(max-width:768px){
+    .div2{
+        width: 100%;
+        order: 1;
+        
+    }
+    .div{
+        gap: 10px;
+    }
+}

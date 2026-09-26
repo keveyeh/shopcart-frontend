@@ -1,0 +1,74 @@
+.container{
+    max-width: 250px;
+    width: 100%;
+    height: 200px;
+    border-radius:8px ;
+    border: 1px solid var(--countborder-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--count-color);
+    box-shadow: 5px 5px 5px 5px var(--btn);
+    padding: 10px;
+}
+.small{
+  background-color: var(--count-color);
+  border: none;
+  cursor: pointer;
+}
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.h1{
+    background-color: var(--h1-back);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: var(h1color);
+    margin-top: 0px;
+}
+.btn{
+   background-color: dodgerblue;
+   border: none;
+   padding: 5px;
+   color: var(--count-color);
+   border-radius: 4px;
+   box-shadow: 5px 5px 5px var(--btn);
+   transition: 0.5s ease-in-out;
+   cursor: pointer;
+}
+.btn:hover{
+    transform: translateY(-5px);
+}
+.sub{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 20px;
+    
+}
+.Sun{
+    color: rgb(255, 255, 0);
+    font-size: 25px;
+}
+.Moon{
+  font-size: 25px;
+  color: white;
+}
+.bod{
+    width: 100%;
+    height: 100vh;
+    background-color:var(--count-color) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
